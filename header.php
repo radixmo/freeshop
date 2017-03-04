@@ -36,21 +36,14 @@ $container = get_theme_mod( 'freeshop_container_type' );
 		<div class="container">
 	<?php endif; ?>
 
-			<div class="site-header-inner col-sm-12">
-
-				<?php if ( ! has_custom_logo() ) { ?>
-
-				<div class="site-branding">
-					<span class="site-title h1"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-					<p class="site-description lead"><?php bloginfo( 'description' ); ?></p>
-				</div>
-					
-				
-				<?php } else {
-					the_custom_logo();
-				} ?><!-- end custom logo -->
-
+			<?php if ( ! has_custom_logo() ) { ?>
+			<div class="site-branding">
+				<span class="site-title h2"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 			</div>
+			<?php } else {
+				the_custom_logo();
+			} ?><!-- end custom logo -->
 
 	<?php if ( 'container' == $container ) : ?>
 		</div><!-- .container -->

@@ -1,6 +1,6 @@
 {
   "name": "freeshop",
-  "version": "1.0",
+  "version": "0.1.0",
   "homepage": "https://radixmo.com",
   "authors": [
     "Len Johnson"
@@ -26,6 +26,6 @@
   "dependencies": {
   },
   "_source": "https://github.com/radixmo/freeshop.git",
-  "_target": "~1.0",
+  "_target": "~0.1.0",
   "_originalSource": "freeshop"
 }

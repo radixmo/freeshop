@@ -9211,6 +9211,13 @@ h1.navbar-brand a:hover {
 #masthead {
   margin: 20px 0 25px 0; }
 
+.site-title.h2 {
+  font-weight: 700; }
+
+@media (max-width: 575px) {
+  #masthead {
+    text-align: center; } }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

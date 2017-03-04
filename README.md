@@ -1,4 +1,4 @@
-# FreeShop WordPress Theme Framework
+# FreeShop WordPress Theme
 
 ## About
 
