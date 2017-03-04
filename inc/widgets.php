@@ -2,7 +2,7 @@
 /**
  * Declaring widgets
  *
- * @package understrap
+ * @package freeshop
  */
 
 /**
@@ -43,13 +43,13 @@ function slbd_count_widgets( $sidebar_id ) {
 }
 
 
-if ( ! function_exists( 'understrap_widgets_init' ) ) {
+if ( ! function_exists( 'freeshop_widgets_init' ) ) {
 	/**
 	 * Initializes themes widgets.
 	 */
-	function understrap_widgets_init() {
+	function freeshop_widgets_init() {
 		register_sidebar( array(
-			'name'          => __( 'Right Sidebar', 'understrap' ),
+			'name'          => __( 'Right Sidebar', 'freeshop' ),
 			'id'            => 'right-sidebar',
 			'description'   => 'Right sidebar widget area',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -59,7 +59,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Left Sidebar', 'understrap' ),
+			'name'          => __( 'Left Sidebar', 'freeshop' ),
 			'id'            => 'left-sidebar',
 			'description'   => 'Left sidebar widget area',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -69,7 +69,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Hero Slider', 'understrap' ),
+			'name'          => __( 'Hero Slider', 'freeshop' ),
 			'id'            => 'hero',
 			'description'   => 'Hero slider area. Place two or more widgets here and they will slide!',
 			'before_widget' => '<div class="carousel-item">',
@@ -79,7 +79,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Hero Static', 'understrap' ),
+			'name'          => __( 'Hero Static', 'freeshop' ),
 			'id'            => 'statichero',
 			'description'   => 'Static Hero widget. no slider functionallity',
 		    'before_widget'  => '<div id="%1$s" class="static-hero-widget %2$s '. slbd_count_widgets( 'statichero' ) .'">', 
@@ -89,7 +89,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Footer Full', 'understrap' ),
+			'name'          => __( 'Footer Full', 'freeshop' ),
 			'id'            => 'footerfull',
 			'description'   => 'Widget area below main content and above footer',
 		    'before_widget'  => '<div id="%1$s" class="footer-widget %2$s '. slbd_count_widgets( 'footerfull' ) .'">', 
@@ -99,6 +99,6 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 	}
-} // endif function_exists( 'understrap_widgets_init' ).
-add_action( 'widgets_init', 'understrap_widgets_init' );
+} // endif function_exists( 'freeshop_widgets_init' ).
+add_action( 'widgets_init', 'freeshop_widgets_init' );
 

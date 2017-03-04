@@ -7,13 +7,13 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package understrap
+ * @package freeshop
  */
 
 get_header();
 
-$container   = get_theme_mod( 'understrap_container_type' );
-$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
+$container   = get_theme_mod( 'freeshop_container_type' );
+$sidebar_pos = get_theme_mod( 'freeshop_sidebar_position' );
 
 ?>
 

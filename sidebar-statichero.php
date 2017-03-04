@@ -2,10 +2,10 @@
 /**
  * Static hero sidebar setup.
  *
- * @package understrap
+ * @package freeshop
  */
 
-$container   = get_theme_mod( 'understrap_container_type' );
+$container   = get_theme_mod( 'freeshop_container_type' );
 
 ?>
 

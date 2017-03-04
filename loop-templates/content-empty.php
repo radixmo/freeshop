@@ -2,7 +2,7 @@
 /**
  * Content empty partial template.
  *
- * @package understrap
+ * @package freeshop
  */
 
 the_content();

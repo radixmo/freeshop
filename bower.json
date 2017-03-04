@@ -1,11 +1,11 @@
 {
-  "name": "understrap",
-  "version": "0.5.7",
-  "homepage": "http://understrap.com",
+  "name": "freeshop",
+  "version": "1.0",
+  "homepage": "https://radixmo.com",
   "authors": [
-    "Holger Koenemann <office@holgerkoenemann.de>"
+    "Len Johnson"
   ],
-  "description": "UnderStrap is a Bootstrap and underscores based WordPress theme framework.",
+  "description": "FreeShop is an Understrap based WordPress theme framework.",
   "moduleType": "globals",
   "main": [
     "sass/theme.scss"
@@ -25,7 +25,7 @@
   ],
   "dependencies": {
   },
-  "_source": "https://github.com/holger1411/understrap.git",
-  "_target": "~0.5.7",
-  "_originalSource": "understrap"
+  "_source": "https://github.com/radixmo/freeshop.git",
+  "_target": "~1.0",
+  "_originalSource": "freeshop"
 }

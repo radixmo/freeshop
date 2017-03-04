@@ -48,7 +48,7 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 
 							<?php elseif ( 'order-number' === $column_id ) : ?>
 								<a href="<?php echo esc_url( $order->get_view_order_url() ); ?>">
-									<?php echo _x( '#', 'hash before order number', 'understrap' ) . $order->get_order_number(); ?>
+									<?php echo _x( '#', 'hash before order number', 'freeshop' ) . $order->get_order_number(); ?>
 								</a>
 
 							<?php elseif ( 'order-date' === $column_id ) : ?>
@@ -58,22 +58,22 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 								<?php echo wc_get_order_status_name( $order->get_status() ); ?>
 
 							<?php elseif ( 'order-total' === $column_id ) : ?>
-								<?php echo sprintf( _n( '%s for %s item', '%s for %s items', $item_count, 'understrap' ), $order->get_formatted_order_total(), $item_count ); ?>
+								<?php echo sprintf( _n( '%s for %s item', '%s for %s items', $item_count, 'freeshop' ), $order->get_formatted_order_total(), $item_count ); ?>
 
 							<?php elseif ( 'order-actions' === $column_id ) : ?>
 								<?php
 									$actions = array(
 										'pay'    => array(
 											'url'  => $order->get_checkout_payment_url(),
-											'name' => __( 'Pay', 'understrap' )
+											'name' => __( 'Pay', 'freeshop' )
 										),
 										'view'   => array(
 											'url'  => $order->get_view_order_url(),
-											'name' => __( 'View', 'understrap' )
+											'name' => __( 'View', 'freeshop' )
 										),
 										'cancel' => array(
 											'url'  => $order->get_cancel_order_url( wc_get_page_permalink( 'myaccount' ) ),
-											'name' => __( 'Cancel', 'understrap' )
+											'name' => __( 'Cancel', 'freeshop' )
 										)
 									);
 
@@ -104,11 +104,11 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 	<?php if ( 1 < $customer_orders->max_num_pages ) : ?>
 		<div class="woocommerce-Pagination">
 			<?php if ( 1 !== $current_page ) : ?>
-				<a class="woocommerce-Button woocommerce-Button--previous button" href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page - 1 ) ); ?>"><?php _e( 'Previous', 'understrap' ); ?></a>
+				<a class="woocommerce-Button woocommerce-Button--previous button" href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page - 1 ) ); ?>"><?php _e( 'Previous', 'freeshop' ); ?></a>
 			<?php endif; ?>
 
 			<?php if ( $current_page !== intval( $customer_orders->max_num_pages ) ) : ?>
-				<a class="woocommerce-Button woocommerce-Button--next btn btn-outline-primary" href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page + 1 ) ); ?>"><?php _e( 'Next', 'understrap' ); ?></a>
+				<a class="woocommerce-Button woocommerce-Button--next btn btn-outline-primary" href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page + 1 ) ); ?>"><?php _e( 'Next', 'freeshop' ); ?></a>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>
@@ -116,9 +116,9 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 <?php else : ?>
 	<div class="woocommerce-Message woocommerce-Message--info woocommerce-info">
 		<a class="btn btn-outline-primary" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php _e( 'Go Shop', 'understrap' ) ?>
+			<?php _e( 'Go Shop', 'freeshop' ) ?>
 		</a>
-		<?php _e( 'No order has been made yet.', 'understrap' ); ?>
+		<?php _e( 'No order has been made yet.', 'freeshop' ); ?>
 	</div>
 <?php endif; ?>
 

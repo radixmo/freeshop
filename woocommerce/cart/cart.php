@@ -33,10 +33,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<tr>
 			<th class="product-remove">&nbsp;</th>
 			<th class="product-thumbnail">&nbsp;</th>
-			<th class="product-name"><?php esc_html_e( 'Product', 'understrap' ); ?></th>
-			<th class="product-price"><?php esc_html_e( 'Price', 'understrap' ); ?></th>
-			<th class="product-quantity"><?php esc_html_e( 'Quantity', 'understrap' ); ?></th>
-			<th class="product-subtotal"><?php esc_html_e( 'Total', 'understrap' ); ?></th>
+			<th class="product-name"><?php esc_html_e( 'Product', 'freeshop' ); ?></th>
+			<th class="product-price"><?php esc_html_e( 'Price', 'freeshop' ); ?></th>
+			<th class="product-quantity"><?php esc_html_e( 'Quantity', 'freeshop' ); ?></th>
+			<th class="product-subtotal"><?php esc_html_e( 'Total', 'freeshop' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -57,7 +57,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 								'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
 								esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
-								__( 'Remove this item', 'understrap' ),
+								__( 'Remove this item', 'freeshop' ),
 								esc_attr( $product_id ),
 								esc_attr( $_product->get_sku() )
 							), $cart_item_key );
@@ -76,7 +76,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 					</td>
 
-					<td class="product-name" data-title="<?php _e( 'Product', 'understrap' ); ?>">
+					<td class="product-name" data-title="<?php _e( 'Product', 'freeshop' ); ?>">
 						<?php
 							if ( ! $product_permalink ) {
 								echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
@@ -89,18 +89,18 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 							// Backorder notification.
 							if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
-								echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'understrap' ) . '</p>';
+								echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'freeshop' ) . '</p>';
 							}
 						?>
 					</td>
 
-					<td class="product-price" data-title="<?php _e( 'Price', 'understrap' ); ?>">
+					<td class="product-price" data-title="<?php _e( 'Price', 'freeshop' ); ?>">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 						?>
 					</td>
 
-					<td class="product-quantity" data-title="<?php _e( 'Quantity', 'understrap' ); ?>">
+					<td class="product-quantity" data-title="<?php _e( 'Quantity', 'freeshop' ); ?>">
 						<?php
 							if ( $_product->is_sold_individually() ) {
 								$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -117,7 +117,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 					</td>
 
-					<td class="product-subtotal" data-title="<?php _e( 'Total', 'understrap' ); ?>">
+					<td class="product-subtotal" data-title="<?php _e( 'Total', 'freeshop' ); ?>">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 						?>
@@ -135,13 +135,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 				<?php if ( wc_coupons_enabled() ) { ?>
 					<div class="coupon">
 
-						<label for="coupon_code"><?php _e( 'Coupon:', 'understrap' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'understrap' ); ?>" /> <input type="submit" class=" btn btn-outline-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'understrap' ); ?>" />
+						<label for="coupon_code"><?php _e( 'Coupon:', 'freeshop' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'freeshop' ); ?>" /> <input type="submit" class=" btn btn-outline-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'freeshop' ); ?>" />
 
 						<?php do_action( 'woocommerce_cart_coupon' ); ?>
 					</div>
 				<?php } ?>
 
-				<input type="submit" class="btn btn-outline-primary"  name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'understrap' ); ?>" />
+				<input type="submit" class="btn btn-outline-primary"  name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'freeshop' ); ?>" />
 
 				<?php do_action( 'woocommerce_cart_actions' ); ?>
 

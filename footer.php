@@ -4,11 +4,11 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package understrap
+ * @package freeshop
  */
 
 $the_theme = wp_get_theme();
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'freeshop_container_type' );
 ?>
 
 <?php get_sidebar( 'footerfull' ); ?>
@@ -24,13 +24,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-						<a href="<?php echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
+						<a href="<?php echo esc_url( __( 'http://wordpress.org/','freeshop' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'freeshop' ),'WordPress' ); ?></a>
 						<span class="sep"> | </span>
 						<?php printf( // WPCS: XSS ok.
-							esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),
-						'<a href="http://understrap.com/">understrap.com</a>' ); ?>
+							esc_html__( 'Theme: %1$s by %2$s.', 'freeshop' ), $the_theme->get( 'Name' ),
+						'<a href="https://radixmo.com/">radixmo.com</a>' ); ?>
 						(<?php printf( // WPCS: XSS ok.
-							esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
+							esc_html__( 'Version: %1$s', 'freeshop' ), $the_theme->get( 'Version' ) ); ?>)
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->

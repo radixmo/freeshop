@@ -2,13 +2,13 @@
 /**
  * The template for displaying search results pages.
  *
- * @package understrap
+ * @package freeshop
  */
 
 get_header();
 
-$container   = get_theme_mod( 'understrap_container_type' );
-$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
+$container   = get_theme_mod( 'freeshop_container_type' );
+$sidebar_pos = get_theme_mod( 'freeshop_sidebar_position' );
 ?>
 
 <div class="wrapper" id="search-wrapper">
@@ -26,7 +26,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 					<header class="page-header">
 
-						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'understrap' ),
+						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'freeshop' ),
 						'<span>' . get_search_query() . '</span>' ); ?></h1>
 
 					</header><!-- .page-header -->
@@ -54,7 +54,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
+			<?php freeshop_pagination(); ?>
 
 		</div><!-- #primary -->
 

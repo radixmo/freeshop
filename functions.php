@@ -1,8 +1,8 @@
 <?php
 /**
- * Understrap functions and definitions
+ * Freeshop functions and definitions
  *
- * @package understrap
+ * @package freeshop
  */
 
 /**
