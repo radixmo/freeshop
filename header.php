@@ -27,11 +27,38 @@ $container = get_theme_mod( 'freeshop_container_type' );
 
 <div class="hfeed site" id="page">
 
+	<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
+		'freeshop' ); ?></a>
+	<header id="masthead" class="site-header" role="banner">
+	<?php // substitute the class "container-fluid" below if you want a wider content area ?>
+
+	<?php if ( 'container' == $container ) : ?>
+		<div class="container">
+	<?php endif; ?>
+
+			<div class="site-header-inner col-sm-12">
+
+				<?php if ( ! has_custom_logo() ) { ?>
+
+				<div class="site-branding">
+					<span class="site-title h1"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+					<p class="site-description lead"><?php bloginfo( 'description' ); ?></p>
+				</div>
+					
+				
+				<?php } else {
+					the_custom_logo();
+				} ?><!-- end custom logo -->
+
+			</div>
+
+	<?php if ( 'container' == $container ) : ?>
+		</div><!-- .container -->
+	<?php endif; ?>
+	</header><!-- #masthead -->
+
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
-
-		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
-		'freeshop' ); ?></a>
 
 		<nav class="navbar navbar-toggleable-md  navbar-inverse bg-inverse">
 
@@ -43,23 +70,18 @@ $container = get_theme_mod( 'freeshop_container_type' );
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() ) { ?>
+				<!-- place holder for empty menus -->
+				<?php if ( is_front_page() && is_home() ) : ?>
 
-						<?php if ( is_front_page() && is_home() ) : ?>
-
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-							
-						<?php else : ?>
-
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-						
-						<?php endif; ?>
-						
+					<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 					
-					<?php } else {
-						the_custom_logo();
-					} ?><!-- end custom logo -->
+				<?php else : ?>
+
+					<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+				
+				<?php endif; ?>
+						
+
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -80,3 +102,4 @@ $container = get_theme_mod( 'freeshop_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- .wrapper-navbar end -->
+
