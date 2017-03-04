@@ -4,7 +4,7 @@
 
 This theme is based on [UnderStrap] (https://github.com/holger1411/understrap) which was started by huge fans of Underscores, Bootstrap, and Sass who decided to combine these into a solid WordPress Theme Framework.
 
-You can use FreeShop as starter theme and build out your own theme on top of it. Or, you use it as parent theme and create your own child theme for FreeShop.
+You can use FreeShop as starter theme and build out your own theme on top of it. Or, you can use it as parent theme and create your own child theme for FreeShop.
 
 
 ## License
@@ -29,8 +29,11 @@ See [changelog](CHANGELOG.md)
 
 ## Starter Theme + HTML Framework = WordPress Theme Framework
 
-The _s theme is a good starting point to develop a WordPress theme. But it is "just" a raw starter theme. That means it outputs all the WordPress stuff correctly but without any layout or design.
+Underscores (the _s theme) is a good starting point to develop a WordPress theme. But, it is "just" a raw starter theme. That means it outputs all the WordPress stuff correctly but without any layout or design.
+
 Bootstrap provides a well documented layout framework which helps to make it easy to develop a solid, clean and responsive foundation.
+
+FreeShop combines the best both packages.
 
 ## Confused by All the CSS and Sass Files?
 
