@@ -4,8 +4,7 @@
 
 This theme is based on [UnderStrap] (https://github.com/holger1411/understrap) which was started by huge fans of Underscores, Bootstrap, and Sass who decided to combine these into a solid WordPress Theme Framework.
 
-You can use FreeShop as starter theme and build out your own theme on top of it. Or, you can use it as parent theme and create your own child theme for FreeShop.
-
+You can use FreeShop as a starter theme and build out your own theme on top of it. Or, you can use it as parent theme and create your own child theme.
 
 ## License
 Freeshop is released under the terms of the GPL version 2 or (at your option) any later version.
@@ -41,13 +40,13 @@ Some basics about the Sass and CSS files that come with FreeShop:
 - The theme itself uses the `/style.css`file just to identify the theme inside of WordPress. The file is not loaded by the theme and does not include any styles.
 - The `/css/theme.css` and its minified little brother `/css/theme.min.css` file(s) provides all styles. It is composed of five different SCSS sets and one variable file at `/sass/theme.scss`:
 
-                  - 1 "theme/theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap or FreeShop variables here
-                  - 2 "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
-                  - 3 "freeshop/freeshop"; // <--------- Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
-                  - 4 "../src/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
+    - 1 "theme/theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap or FreeShop variables here
+    - 2 "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
+    - 3 "freeshop/freeshop"; // <--------- Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
+    - 4 "../src/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
 
-                  // Any additional imported files //
-                  - 5 "theme/theme";  // <--------- Add your styles into this file
+    // Any additional imported files //
+    - 5 "theme/theme";  // <--------- Add your styles into this file
 
 - Don’t edit the files no. 2-4 files/filesets or you won’t be able to update it without overwriting your own work!
 - Your design goes into: `/sass/theme`. Add your styles to the `/sass/theme/_theme.scss` file and your variables to the `/sass/theme/_theme_variables.scss`. Or add other .scss files into it and `@import` it into `/sass/theme/_theme.scss`.
