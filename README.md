@@ -16,8 +16,7 @@ See [changelog](CHANGELOG.md)
 
 ## Basic Features
 
-- Combines Underscore’s PHP/JS files and Bootstrap’s HTML/CSS/JS.
-- Comes with Bootstrap (v4) Sass source files and additional .scss files. Nicely sorted and ready to add your own variables and customize the Bootstrap variables.
+- Combines Underscore's PHP/JS files and Bootstrap 4 HTML/CSS/JS.
 - Uses a single and minified CSS file for all the basic stuff.
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/) integration (v4.7.0)
 - Jetpack ready.
@@ -28,20 +27,19 @@ See [changelog](CHANGELOG.md)
 
 ## Confused by All the CSS and Sass Files?
 
+FreeShop comes with Bootstrap (v4) Sass source files and additional .scss files. Nicely sorted and ready for you to customize and add your own variables.
+
 Some basics about the Sass and CSS files that come with FreeShop:
-- The theme itself uses the `/style.css`file just to identify the theme inside of WordPress. The file is not loaded by the theme and does not include any styles.
-- The `/css/theme.css` and its minified little brother `/css/theme.min.css` file(s) provides all styles. It is composed of five different SCSS sets and one variable file at `/sass/theme.scss`:
+- `/style.css` is NOT loaded by the theme and does not include any styles. It just to identifies the theme inside of WordPress. 
+- `/css/theme.css` and its minified version `/css/theme.min.css` provide all styles. They are composed from five different SCSS sets and one variable file at `/sass/theme.scss`:
 
   - 1 "theme/_theme_variables.scss";  // <--------- Add your own variables and overwrite existing variables here
-
   - 2 "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
   - 3 "freeshop/freeshop"; // <--------- Some basic WordPress styles needed to combine Boostrap and Underscores
   - 4 "../src/sass/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
-
-  // Any additional imported files //
   - 5 "theme/_theme.scss";  // <--------- Add your styles into this file
 
-- Don’t edit the files/filesets no. 2-4 or you won’t be able to update it without overwriting your own work!
+- Don't edit the files/filesets no. 2-4 or you won't be able to update it without overwriting your own work!
 - Put your CSS in `/sass/theme/_theme.scss` file and your variables in the `/sass/theme/_theme_variables.scss`.
 - Another option is to create new .scss files and `@import` them into `/sass/theme/_theme.scss`.
 
@@ -91,7 +89,7 @@ var browserSyncOptions = {
 The front-page slider is widget driven. Simply add more than one widget to widget position "Hero".
 - Click on Appearance → Widgets.
 - Add two, or more, widgets of any kind to widget area “Hero”.
-- That’s it.
+- That's it.
 
 ## RTL styles?
 Just add a new file to the themes root folder called rtl.css. Add all alignments to this file according to this description:
