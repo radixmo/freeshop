@@ -2,9 +2,9 @@
 
 ## About
 
-This theme is based on [UnderStrap] (https://github.com/holger1411/understrap) which was started by huge fans of Underscores, Bootstrap, and Sass who decided to combine these into a solid WordPress Theme Framework.
+This theme is based on [UnderStrap] (https://github.com/holger1411/understrap) which was started by @holger1411, a huge fan of Underscores, Bootstrap, and Sass, who decided to combine these into a solid WordPress Theme Framework.
 
-You can use FreeShop as a starter theme and build out your own theme on top of it. Or, you can use it as parent theme and create your own child theme.
+However, FreeShop is meant to be customised rather than be used 'as-is'! Use me as a starter theme and hack the core code to achieve the look and feel you want.
 
 ## License
 Freeshop is released under the terms of the GPL version 2 or (at your option) any later version.
@@ -26,24 +26,16 @@ See [changelog](CHANGELOG.md)
 - Child Theme ready.
 - Translation ready.
 
-## Starter Theme + HTML Framework = WordPress Theme Framework
-
-Underscores (the _s theme) is a good starting point to develop a WordPress theme. But, it is "just" a raw starter theme. That means it outputs all the WordPress stuff correctly but without any layout or design.
-
-Bootstrap provides a well documented layout framework which helps to make it easy to develop a solid, clean and responsive foundation.
-
-FreeShop combines the best both packages.
-
 ## Confused by All the CSS and Sass Files?
 
 Some basics about the Sass and CSS files that come with FreeShop:
 - The theme itself uses the `/style.css`file just to identify the theme inside of WordPress. The file is not loaded by the theme and does not include any styles.
 - The `/css/theme.css` and its minified little brother `/css/theme.min.css` file(s) provides all styles. It is composed of five different SCSS sets and one variable file at `/sass/theme.scss`:
 
-  - 1 "theme/_theme_variables.scss";  // <--------- Add your own variables and overwrite Bootstrap or FreeShop variables here
+  - 1 "theme/_theme_variables.scss";  // <--------- Add your own variables and overwrite existing variables here
 
   - 2 "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
-  - 3 "freeshop/freeshop"; // <--------- Some basic WordPress stylings and styles needed to combine Boostrap and Underscores
+  - 3 "freeshop/freeshop"; // <--------- Some basic WordPress styles needed to combine Boostrap and Underscores
   - 4 "../src/sass/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
 
   // Any additional imported files //
@@ -56,12 +48,14 @@ Some basics about the Sass and CSS files that come with FreeShop:
 ## Installation
 
 ### Classic install
-- Download the freeshop folder from GitHub
-- IMPORTANT: Make sure you rename the "freeshop-framework.zip" file just to "freeshop.zip" or you might have problems using child themes !!
+- Download the [freeshop package] (https://github.com/radixmo/freeshop/archive/framework.zip) from GitHub
 - Upload it into your WordPress installation subfolder here: `/wp-content/themes/`
 - Login to your WordPress backend
 - Go to Appearance → Themes
 - Activate the FreeShop theme
+
+IMPORTANT: 
+- If you want create and use child themes based on FreeShop: Make sure you rename the "freeshop-framework.zip" file just to "freeshop.zip".
 
 ### npm install
 - Open your terminal
@@ -94,7 +88,7 @@ var browserSyncOptions = {
 
 ## How to Use the Build-In Widget Slider
 
-The front-page slider is widget driven. Simply add more than one widget to widget position “Hero”.
+The front-page slider is widget driven. Simply add more than one widget to widget position "Hero".
 - Click on Appearance → Widgets.
 - Add two, or more, widgets of any kind to widget area “Hero”.
 - That’s it.

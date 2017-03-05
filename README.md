@@ -32,10 +32,10 @@ Some basics about the Sass and CSS files that come with FreeShop:
 - The theme itself uses the `/style.css`file just to identify the theme inside of WordPress. The file is not loaded by the theme and does not include any styles.
 - The `/css/theme.css` and its minified little brother `/css/theme.min.css` file(s) provides all styles. It is composed of five different SCSS sets and one variable file at `/sass/theme.scss`:
 
-  - 1 "theme/_theme_variables.scss";  // <--------- Add your own variables and overwrite Bootstrap or FreeShop variables here
+  - 1 "theme/_theme_variables.scss";  // <--------- Add your own variables and overwrite existing variables here
 
   - 2 "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
-  - 3 "freeshop/freeshop"; // <--------- Some basic WordPress stylings and styles needed to combine Boostrap and Underscores
+  - 3 "freeshop/freeshop"; // <--------- Some basic WordPress styles needed to combine Boostrap and Underscores
   - 4 "../src/sass/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
 
   // Any additional imported files //
@@ -48,7 +48,7 @@ Some basics about the Sass and CSS files that come with FreeShop:
 ## Installation
 
 ### Classic install
-- Download the freeshop packages from GitHub
+- Download the [freeshop package] (https://github.com/radixmo/freeshop/archive/framework.zip) from GitHub
 - Upload it into your WordPress installation subfolder here: `/wp-content/themes/`
 - Login to your WordPress backend
 - Go to Appearance → Themes
