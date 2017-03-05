@@ -7,12 +7,10 @@ This theme is based on [UnderStrap] (https://github.com/holger1411/understrap) w
 However, FreeShop is meant to be customised rather than be used 'as-is'! Use me as a starter theme and hack the core code to achieve the look and feel you want.
 
 ## License
-Freeshop is released under the terms of the GPL version 2 or (at your option) any later version.
-
-http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+Freeshop is released under the terms of the [GPL version 2] (http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) or (at your option) any later version.
 
 ## Changelog
-See [changelog](CHANGELOG.md)
+See: [changelog](CHANGELOG.md)
 
 ## Basic Features
 
