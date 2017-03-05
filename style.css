@@ -5,7 +5,7 @@ Author: Len Johnson
 Author URI: https://radixmo.com
 Description: FreeShop is based on the UnderStrap theme (which combines Automattic´s _s theme and Bootstrap 4). Use it as starter theme or as a parent theme. Includes Font Awesome support, built-in widget slider and much more.
 IMPORTANT: To get all of the ´developer´ dependencies: download the .zip, extract it, run "npm install" and "gulp copy-assets" inside the extracted /freeshop folder so that you can recompile your CSS and JS files.
-Version: 1.0
+Version: 0.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: freeshop

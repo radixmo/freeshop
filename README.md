@@ -43,10 +43,10 @@ FreeShop comes with Sass source files for Bootstrap (v4), Underscores and FreeSh
 ## Installation
 
 ### Classic install
-- Download the [freeshop package] (https://github.com/radixmo/freeshop/archive/framework.zip) from GitHub
-- Upload it into your WordPress installation subfolder here: `/wp-content/themes/`
+- Download the [freeshop framework] (https://github.com/radixmo/freeshop/archive/framework.zip) from GitHub
 - Login to your WordPress backend
 - Go to Appearance → Themes
+- Upload FreeShop into your WordPress installation subfolder here: `/wp-content/themes/`
 - Activate the FreeShop theme
 
 IMPORTANT: 
