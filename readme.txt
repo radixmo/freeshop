@@ -30,11 +30,11 @@ FreeShop comes with Sass source files for Bootstrap (v4), Underscores and FreeSh
 - `/style.css` is NOT loaded by the theme and does not include any styles. It just identifies the theme inside of WordPress. 
 - `/css/theme.css` and its minified version `/css/theme.min.css` provide all styles. They are composed from five different SCSS sets and one variable file at `/sass/theme.scss`:
 
-  1. "theme/_theme_variables.scss";  // <--------- Add your own variables and overwrite existing variables here
-  2. "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
-  3. "freeshop/freeshop"; // <--------- Some basic WordPress styles needed to combine Boostrap and Underscores
-  4. "../src/sass/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
-  5. "theme/_theme.scss";  // <--------- Add your styles into this file
+  1 "theme/_theme_variables.scss";  // <--------- Add your own variables and overwrite existing variables here
+  2 "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
+  3 "freeshop/freeshop"; // <--------- Some basic WordPress styles needed to combine Boostrap and Underscores
+  4 "../src/sass/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
+  5 "theme/_theme.scss";  // <--------- Add your styles into this file
 
 - Don't edit the files/filesets no. 2-4 or you won't be able to update it without overwriting your own work!
 - Put your CSS in `/sass/theme/_theme.scss` file and your variables in the `/sass/theme/_theme_variables.scss`.
