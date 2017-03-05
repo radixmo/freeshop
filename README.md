@@ -27,10 +27,9 @@ See [changelog](CHANGELOG.md)
 
 ## Confused by All the CSS and Sass Files?
 
-FreeShop comes with Bootstrap (v4) Sass source files and additional .scss files. Nicely sorted and ready for you to customize and add your own variables.
+FreeShop comes with Sass source files for Bootstrap (v4), Underscores and FreeShop. Here is some information about how they are organised:
 
-Some basics about the Sass and CSS files that come with FreeShop:
-- `/style.css` is NOT loaded by the theme and does not include any styles. It just to identifies the theme inside of WordPress. 
+- `/style.css` is NOT loaded by the theme and does not include any styles. It just identifies the theme inside of WordPress. 
 - `/css/theme.css` and its minified version `/css/theme.min.css` provide all styles. They are composed from five different SCSS sets and one variable file at `/sass/theme.scss`:
 
   - 1 "theme/_theme_variables.scss";  // <--------- Add your own variables and overwrite existing variables here
@@ -60,7 +59,7 @@ IMPORTANT:
 - Change to the directory where you want to add FreeShop
 - Type `npm install freeshop`
 
-## Developing With npm, Gulp and SASS and [Browser Sync][1]
+## Developing with npm, Gulp, SASS and [Browser Sync] (1)
 
 ### Installing Dependencies
 - Make sure you have installed Node.js and Browser-Sync* (* optional, if you wanna use it) on your computer globally
@@ -133,4 +132,3 @@ and of course
 - jQuery: https://jquery.org | (Code licensed under MIT)
 - WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker | GNU GPL
 - Bootstrap Gallery Script based on Roots Sage Gallery: https://github.com/roots/sage/blob/5b9786b8ceecfe717db55666efe5bcf0c9e1801c/lib/gallery.php
-
