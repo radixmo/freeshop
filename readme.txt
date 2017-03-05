@@ -16,7 +16,7 @@ See: [changelog](CHANGELOG.md)
 
 - Combines Underscore's PHP/JS files and Bootstrap 4 HTML/CSS/JS.
 - Uses a single and minified CSS file for all the basic stuff.
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/) integration (v4.7.0)
+- Font Awesome icons (v4.7.0).
 - Jetpack ready.
 - WooCommerce support.
 - Contact Form 7 support.
