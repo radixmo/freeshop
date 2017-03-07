@@ -62,20 +62,7 @@ $container = get_theme_mod( 'freeshop_container_type' );
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
-				<!-- place holder for empty menus -->
-				<?php if ( is_front_page() && is_home() ) : ?>
-
-					<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-					
-				<?php else : ?>
-
-					<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-				
-				<?php endif; ?>
-						
-
-
+			
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
