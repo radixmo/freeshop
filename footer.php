@@ -28,7 +28,7 @@ $container = get_theme_mod( 'freeshop_container_type' );
 						<span class="sep"> | </span>
 						<?php printf( // WPCS: XSS ok.
 							esc_html__( 'Theme: %1$s by %2$s.', 'freeshop' ), $the_theme->get( 'Name' ),
-						'<a href="https://radixmo.com/">radixmo</a>' ); ?>
+						'<a href="https://radixmo.com/">RADXIMO</a>' ); ?>
 						(<?php printf( // WPCS: XSS ok.
 							esc_html__( 'Version: %1$s', 'freeshop' ), $the_theme->get( 'Version' ) ); ?>)
 					</div><!-- .site-info -->
